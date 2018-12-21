@@ -22,11 +22,11 @@ nav {
 #logo {
     margin: 0;
     display: inline-block;
-    /* width: 100px; */
 }
 
 .nav-links {
     float: right;
+    margin-top: 5px;
 }
 
 .nav-link {
@@ -112,5 +112,6 @@ nav {
     }
     .nav-links {
         float: none;
+        padding: 10px 0;
     }
 }
