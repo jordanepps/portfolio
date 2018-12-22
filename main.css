@@ -1,145 +1,201 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header Section */
 
 header {
-	width: 100%;
-	background-color: gray;
-	margin-bottom: 15px;
+    width: 100%;
+    background-color: gray;
+    margin-bottom: 15px;
 }
 
 nav {
-	max-width: 1000px;
-	margin: auto;
-	padding: 25px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
 }
 
 #logo {
-	margin: 0;
-	display: inline-block;
+    margin: 0;
+    display: inline-block;
 }
 
 .nav-links {
-	float: right;
-	margin-top: 5px;
+    float: right;
+    margin-top: 5px;
 }
 
 .nav-link {
-	display: inline-block;
-	padding: 0 5px;
-	text-decoration: none;
-	font-size: 19px;
-	color: black;
+    display: inline-block;
+    padding: 0 5px;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
 }
 
 .nav-link:nth-child(1) {
-	margin-right: 10px;
+    margin-right: 10px;
 }
 
 /* Bio Section */
 
 #bio {
-	width: 100%;
-	padding: 15px;
+    width: 100%;
+    padding: 15px;
 }
 
 .bio-container {
-	max-width: 1000px;
-	background-color: gray;
-	margin: 15px auto;
-	padding: 25px;
-	display: grid;
-	grid-template-columns: 30% 70%;
-	grid-gap: 15px;
-	border-radius: 3px;
+    max-width: 1000px;
+    background-color: gray;
+    margin: 15px auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 15px;
+    border-radius: 3px;
 }
 
 .bio-image img {
-	display: block;
-	width: 100%;
-	max-width: 250px;
-	height: auto;
-	margin: 0 auto 20px;
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto 20px;
 }
 
 .bio-image h3,
 .bio-image p {
-	padding: 0 10px;
-	margin: 0;
+    padding: 0 15px;
+    margin: 0;
 }
 
 .bio-text {
-	padding: 5px;
+    padding: 5px;
 }
 
 .bio-text h2 {
-	font-size: 30px;
+    font-size: 30px;
 }
 
 .bio-text p {
-	font-size: 20px;
-	padding: 5px;
-	line-height: 30px;
+    font-size: 20px;
+    padding: 5px;
+    line-height: 30px;
 }
 
-.bio-image,
+/* .bio-image,
 .bio-text {
-	border: 1px solid black;
-}
+    border: 1px solid black;
+} */
 
 #projects {
-	width: 100%;
-	padding: 15px;
+    width: 100%;
+    padding: 15px;
 }
 
 .projects-container {
-	max-width: 1000px;
-	background-color: gray;
-	margin: 15px auto;
-	padding: 25px;
-	border-radius: 3px;
+    max-width: 1000px;
+    background-color: gray;
+    margin: 15px auto;
+    padding: 25px;
+    border-radius: 3px;
 }
 
 .project-list {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .project {
-	justify-self: center;
+    justify-self: center;
 }
 
 .project img {
-	width: 100%;
-	max-width: 275px;
-	height: auto;
-	padding: 10px;
+    width: 100%;
+    max-width: 275px;
+    height: auto;
+    padding: 10px;
+}
+
+#contact {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+.contact-container {
+    color: white;
+    border-radius: 3px;
+    /* background-color: gray; */
+    background-color: #2472E5;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact-title {
+    margin: 0;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.fab,
+.fas {
+    font-size: 30px;
+    width: 30px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px;
+    /* background-color: #42e5ad; */
+    background-color: #3bce9b;
+    color: white;
+    box-sizing: content-box;
+}
+
+.fab:hover,
+.fas:hover {
+    /* background-color: #3bce9b; */
+    background-color: #42e5ad;
+}
+
+footer {
+    width: 100%;
+    background: gray;
+    height: 75px;
+}
+
+@media only screen and (max-width: 830px) {
+    .project-list {
+        max-width: 600px;
+        margin: auto;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-	header {
-		margin: 0;
-	}
-	nav {
-		padding: 15px;
-		text-align: center;
-	}
-	#logo,
-	.nav-links {
-		display: block;
-	}
-	.nav-links {
-		float: none;
-		padding: 10px 0;
-	}
-	.bio-container {
-		grid-template-columns: 100%;
-	}
+    header {
+        margin: 0;
+    }
+    nav {
+        padding: 15px;
+        text-align: center;
+    }
+    #logo,
+    .nav-links {
+        display: block;
+    }
+    .nav-links {
+        float: none;
+        padding: 10px 0;
+    }
+    .bio-container {
+        grid-template-columns: 100%;
+    }
 }
