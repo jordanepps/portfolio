@@ -124,11 +124,17 @@ nav {
     border-bottom: 4px solid rgba(255, 0, 0, 0.5);
 }
 
+.bio-title-2 {
+    bottom: 22px;
+    left: 50px;
+}
+
 .bio-text p {
     font-size: 16px;
     padding: 5px;
     line-height: 30px;
     color: rgb(75, 74, 74);
+    margin-top: 0;
 }
 
 /* .bio-image,
@@ -166,6 +172,35 @@ nav {
 
 .project {
     justify-self: center;
+    position: relative;
+}
+
+.middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.project:hover img {
+    opacity: 0.3;
+}
+
+.project:hover .middle {
+    opacity: 1;
+}
+
+.middle a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* padding: 16px 32px; */
 }
 
 .project img {
@@ -173,6 +208,36 @@ nav {
     max-width: 275px;
     height: auto;
     padding: 10px;
+}
+
+.modal-image {
+    max-width: 100%;
+    margin: auto;
+}
+
+.modal-links {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.modal-links a {
+    margin: 0 20px;
+    padding: 1px 2px;
+    text-decoration: none;
+    border: 2px solid #7878f8;
+    color: #7878f8;
+}
+
+.modal-links a:hover {
+    color: white;
+    background-color: #7878f8;
+    /* border: none; */
+}
+
+.description-modal p {
+    margin: 0;
 }
 
 #contact {
@@ -184,10 +249,11 @@ nav {
 .contact-container {
     color: white;
     border-radius: 3px;
-    background-color: gray;
+    background-color: rgba(0, 0, 255, 0.5);
     max-width: 600px;
     margin: auto;
     padding: 20px;
+    box-shadow: 8px 10px rgba(255, 0, 0, 0.5);
 }
 
 .contact-title {
@@ -217,7 +283,6 @@ nav {
 
 footer {
     width: 100%;
-    background: gray;
     height: 75px;
 }
 
@@ -229,6 +294,7 @@ footer {
 
 .footer-container p {
     padding: 25px;
+    font-size: 14px;
 }
 
 @media only screen and (max-width: 830px) {

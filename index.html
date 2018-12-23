@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>Jordan Epps</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+		<link rel="shortcut icon" type="image/png" href="img/JE-logo.png" />
+
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
 			integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
 			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
 		/>
 		<script src="main.js"></script>
 	</head>
@@ -37,7 +49,9 @@
 					</div>
 
 					<div class="bio-text">
-						<h2 class="bio-title">A little about me</h2>
+						<h2 class="bio-title">A little</h2>
+						<br />
+						<h2 class="bio-title bio-title-2">about me</h2>
 						<p>
 							Hi! I am Jordan, a developer native to New York City. Having grown
 							up in one of the largest cities in the world for high-tech
@@ -65,7 +79,42 @@
 				<div class="projects-container">
 					<div class="project-list">
 						<div class="project">
-							<img src="https://via.placeholder.com/275" alt="" />
+							<div id="ex1" class="modal">
+								<h3>'The Office' Quiz App</h3>
+								<div class="screenshot-modal">
+									<img
+										class="modal-image"
+										src="img/quizapp.png"
+										alt="Screenshot of 'The Office' Quiz App made by Jordan Epps"
+									/>
+									<div class="modal-links">
+										<a
+											href="https://jordanepps.github.io/theOfficeQuizApp/"
+											target="_blank"
+											>Live</a
+										>
+										<a
+											href="https://github.com/jordanepps/theOfficeQuizApp"
+											target="_blank"
+											>Repo</a
+										>
+									</div>
+								</div>
+								<div class="description-modal">
+									<p class="description-text">
+										A quiz app with questions based on the tv series 'The
+										Office'. The quiz has a total of 10 questions and displays
+										your score throughout the test.
+									</p>
+									<h4>Made with:</h4>
+									<p>Javascript</p>
+									<p>JQuery</p>
+								</div>
+							</div>
+							<img src="/img/quizapp.png" alt="" />
+							<div class="middle">
+								<a href="#ex1" rel="modal:open">View details</a>
+							</div>
 						</div>
 						<div class="project">
 							<img src="https://via.placeholder.com/275" alt="" />
@@ -83,7 +132,6 @@
 							<img src="https://via.placeholder.com/275" alt="" />
 						</div>
 					</div>
-					<!-- Possibly have link to more if/when project count goes over 6 -->
 				</div>
 			</section>
 
