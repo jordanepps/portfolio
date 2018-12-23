@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 * {
 	box-sizing: border-box;
 }
@@ -5,13 +6,16 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	/* color: white; */
+	background-color: #f1f1f1;
+	color: rgb(75, 74, 74);
 }
 
 /* Header Section */
 
 header {
 	width: 100%;
-	background-color: gray;
 	margin-bottom: 15px;
 }
 
@@ -22,21 +26,35 @@ nav {
 }
 
 #logo {
-	margin: 0;
-	display: inline-block;
+	display: inline;
+	position: relative;
+	font: 50px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+	color: rgba(0, 0, 255, 0.5);
+}
+
+#logo::after {
+	content: 'JE';
+	position: absolute;
+	left: 5px;
+	top: 3px;
+	color: rgba(255, 0, 0, 0.5);
 }
 
 .nav-links {
 	float: right;
-	margin-top: 5px;
+	margin-top: 15px;
 }
 
 .nav-link {
 	display: inline-block;
 	padding: 0 5px;
 	text-decoration: none;
-	font-size: 19px;
-	color: black;
+	font-size: 15px;
+	color: rgb(75, 74, 74);
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
 }
 
 .nav-link:nth-child(1) {
@@ -52,7 +70,7 @@ nav {
 
 .bio-container {
 	max-width: 1000px;
-	background-color: gray;
+	/* background-color: gray; */
 	margin: 15px auto;
 	padding: 25px;
 	display: grid;
@@ -66,27 +84,38 @@ nav {
 	width: 100%;
 	max-width: 250px;
 	height: auto;
-	margin: 0 auto 20px;
+	margin: 50px auto 20px;
+	border-radius: 50%;
+}
+
+.bio-image h3 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .bio-image h3,
 .bio-image p {
 	padding: 0 15px;
 	margin: 0;
+	text-align: center;
 }
 
 .bio-text {
 	padding: 5px;
 }
 
-.bio-text h2 {
+.bio-title {
 	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgb(75, 74, 74);
 }
 
 .bio-text p {
-	font-size: 20px;
+	font-size: 16px;
 	padding: 5px;
 	line-height: 30px;
+	color: rgb(75, 74, 74);
 }
 
 /* .bio-image,
@@ -132,8 +161,7 @@ nav {
 .contact-container {
 	color: white;
 	border-radius: 3px;
-	/* background-color: gray; */
-	background-color: #2472e5;
+	background-color: gray;
 	max-width: 600px;
 	margin: auto;
 	padding: 20px;
@@ -154,7 +182,6 @@ nav {
 	text-decoration: none;
 	border-radius: 50%;
 	margin: 5px;
-	/* background-color: #42e5ad; */
 	background-color: #3bce9b;
 	color: white;
 	box-sizing: content-box;
@@ -162,7 +189,6 @@ nav {
 
 .fab:hover,
 .fas:hover {
-	/* background-color: #3bce9b; */
 	background-color: #42e5ad;
 }
 
@@ -197,13 +223,19 @@ footer {
 		padding: 15px;
 		text-align: center;
 	}
-	#logo,
+	/* #logo,
+    .nav-links {
+        display: block;
+    } */
 	.nav-links {
 		display: block;
 	}
 	.nav-links {
 		float: none;
 		padding: 10px 0;
+	}
+	.bio-image img {
+		margin-top: 0;
 	}
 	.bio-container {
 		grid-template-columns: 100%;
