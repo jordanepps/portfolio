@@ -32,7 +32,7 @@ anime
 		scaleX: [0, 1],
 		opacity: [0.5, 1],
 		easing: 'easeOutExpo',
-		duration: 700,
+		duration: 800,
 		offset: '-=875',
 		delay: function(el, i, l) {
 			return 80 * (l - i);
