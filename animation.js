@@ -44,17 +44,3 @@ anime
 		easing: 'easeInExpo',
 		duration: 300
 	});
-
-// anime
-// 	.timeline()
-// 	.add({
-// 		targets: '.bio-p .p1',
-// 		opacity: [0, 1],
-// 		easing: 'easeInExpo',
-// 		duration: 200
-// 	})
-// 	.add({
-// 		targets: '.bio-p .p2',
-// 		opacity: [0, 1],
-// 		easing: 'easeInExpo'
-// 	});
