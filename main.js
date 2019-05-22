@@ -1,4 +1,3 @@
-// Wrap every letter in a span
 $('.letters').each(function() {
 	$(this).html(
 		$(this)
@@ -37,7 +36,7 @@ anime
 		}
 	})
 	.add({
-		targets: '.bio-p',
+		targets: '.bio',
 		opacity: [0, 1],
 		easing: 'easeInExpo',
 		duration: 300
