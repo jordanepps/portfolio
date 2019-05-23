@@ -23,10 +23,16 @@ nav {
 	padding: 25px;
 }
 
+main {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
 #logo {
 	display: inline;
 	position: relative;
-	font: 50px Helvetica, Sans-Serif;
+	font-size: 65px;
+	font-weight: normal;
 	font-family: 'Proza Libre', sans-serif;
 	letter-spacing: -3px;
 	color: rgba(0, 0, 255, 0.6);
@@ -276,7 +282,104 @@ nav {
 	padding: 15px;
 }
 
-.projects-container {
+.section-title {
+	margin-bottom: 150px;
+	position: relative;
+	margin-left: 15px;
+}
+
+.section-title .line {
+	height: 4px;
+	width: 100%;
+	display: block;
+	background-color: rgba(0, 0, 255, 0.6);
+	position: relative;
+}
+
+.section-title .line2 {
+	background-color: rgba(255, 0, 0, 0.6);
+	bottom: 1px;
+	left: 5px;
+	z-index: -1;
+}
+
+
+.section-title h3 {
+	text-transform: uppercase;
+	font-family: 'Proza Libre', sans-serif;
+	font-size: 30px;
+	margin: 0;
+	display: inline-block;
+
+}
+
+.section-title .title-2 {
+	position: relative;
+	margin-top: 5px;
+	left: 55px;
+}
+
+.project {
+	margin: 20px auto;
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+}
+
+.project-about {
+	padding: 10px 40px;
+	text-align: center;
+	justify-self: center;
+	place-self: center;
+}
+
+.line-separator {
+	position: relative;
+	height: 8px;
+	margin: 135px auto;
+	max-width: 800px;
+}
+
+.line-separator span {
+	width: 100%;
+	display: block;
+	height: 6px;
+	background-color: rgba(0, 0, 255, 0.6);
+}
+
+.line-separator span::after {
+	content: '';
+	position: absolute;
+	background-color: rgba(255, 0, 0, 0.6);
+	height: 6px;
+	top: 3px;
+	left: 4px;
+	width: 100%;
+	z-index: -1;
+}
+
+.project-about h4 {
+	font-family: 'Proza Libre', sans-serif;
+	font-size: 26px;
+	margin-top: 0;
+}
+
+.project-about p {
+	font-size: 18px;
+}
+
+.project-about span {
+	font-weight: bold;
+	display: block;
+	margin: 5px 0;
+}
+
+.project-screenshot img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* .projects-container {
 	max-width: 1000px;
 	background-color: rgba(0, 0, 255, 0.5);
 	margin: 15px auto;
@@ -361,12 +464,12 @@ nav {
 .modal-links a:hover {
 	color: white;
 	background-color: #7878f8;
-	/* border: none; */
+	border: none;
 }
 
 .description-modal p {
 	margin: 0;
-}
+} */
 
 #contact {
 	width: 100%;
@@ -439,14 +542,8 @@ footer {
 	font-size: 14px;
 }
 
-@media only screen and (max-width: 830px) {
-	.project-list {
-		max-width: 600px;
-		margin: auto;
-	}
-}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 740px) {
 	header {
 		margin: 0;
 	}
@@ -473,7 +570,20 @@ footer {
 		grid-template-columns: 100%;
 	}
 
-	.project-list {
-		grid-template-columns: 1fr;
+
+	.project {
+		grid-template-columns: 100%;
+		grid-template-rows: 40% 60%;
 	}
+
+	.project-screenshot {
+		grid-row-start: 1;
+	}
+
+	.project-about {
+		margin-top: 0px;
+		padding: 0;
+	}
+
+
 }
