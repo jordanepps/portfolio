@@ -1,275 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Jordan Epps</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="shortcut icon" type="image/png" href="img/JE-logo.png" />
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
-    />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Jordan Epps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="shortcut icon" type="image/png" href="img/JE-logo.png" />
 
-  <body>
-    <header>
-      <nav role="navigation">
-        <h1 id="logo">je</h1>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
 
-        <div class="nav-links">
-          <div class="nav-link">
-            <a href="#projects">
-              my work
-            </a>
-            <span class="hover-line"></span>
-          </div>
-          <div class="nav-link">
-            <a href="#contact">
-              contact
-            </a>
-            <span class="hover-line"></span>
-          </div>
+<body>
+  <header>
+    <nav role="navigation">
+      <h1 id="logo">je</h1>
+
+      <div class="nav-links">
+        <div class="nav-link">
+          <a href="#projects">
+            my work
+          </a>
+          <span class="hover-line"></span>
         </div>
-      </nav>
-    </header>
-
-    <main role="main">
-      <section id="bio">
-        <div class="bio-container">
-          <div class="bio-image">
-            <img src="https://via.placeholder.com/250" alt="" />
-            <h3>Jordan Epps</h3>
-          </div>
-
-          <div class="bio-text">
-            <h2 class="bio-title bio-title-1 headline">
-              <span class="text-wrapper">
-                <span class="letters">A little</span>
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-              </span>
-            </h2>
-            <br />
-            <h2 class="bio-title bio-title-2 headline">
-              <span class="text-wrapper">
-                <span class="letters">about me</span>
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-              </span>
-            </h2>
-            <div class="bio">
-              <p class="p1">
-                Hi! I am Jordan, a developer native to New York City. Having
-                grown up in one of the largest cities in the world for high-tech
-                infrastructure, I was exposed to technology early in life.
-                Curiosity quickly developed, especially pertaining to the
-                internet. I wanted to know the science behind it all, so I
-                taught myself how to code, graduated from Thinkful's
-                engingeering course, and I have not stopped since.
-              </p>
-              <p class="p2">
-                I enjoy web development because it provides me the ability to
-                manufacture anything I conceptualize. I am able to incorporate
-                inspiration from the streets that catalyzed my interest for
-                coding, which is my favorite part. There is always something new
-                to learn, and there is always a more efficient way to produce
-                the designs you desire. Web development consists of perpetual
-                evolutions to the original structure, much like home in New
-                York, and for that it will always be my passion.
-              </p>
-            </div>
-          </div>
+        <div class="nav-link">
+          <a href="#contact">
+            contact
+          </a>
+          <span class="hover-line"></span>
         </div>
-      </section>
-
-      <section id="projects">
-        <div class="section-title">
-          <h3 class="title-1 headline">
-            <span>Some of</span>
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-          </h3>
-          <br />
-          <h3 class="title-2 headline">
-            <span>my work</span>
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-          </h3>
-        </div>
-        <div class="projects-container">
-          <div class="project">
-            <div class="project-about">
-              <h4>Find The Recipe</h4>
-
-              <p>
-                Submit an image that contains food and the Clarifai API will use
-                artificial intelligence to determine possible matching
-                ingredients. The ingredients are then sent to the Edamam API and
-                recipes with ingredients most likely matching the image will be
-                displayed in order. Register and log in to save your favorite
-                recipes you find.
-              </p>
-              <p>
-                Made with: <span>React</span> <span>NodeJS</span
-                ><span>Express</span><span>Postgres</span>
-              </p>
-            </div>
-
-            <div class="project-screenshot">
-              <div class="project-img-container">
-                <img
-                  src="img/find-the-recipe-screenshot.png"
-                  alt="A screen shot of a Demographics Web App"
-                />
-                <div class="project-links">
-                  <div class="link-container">
-                    <div>
-                      <a
-                        href="https://jordans-recipe-app.now.sh/"
-                        target="_blank"
-                      >
-                        Live App
-                      </a>
-                      <span class="hover-line"></span>
-                    </div>
-                    <div>
-                      <a
-                        href="https://github.com/jordanepps/find-the-recipe-client"
-                        target="_blank"
-                      >
-                        Client Repo
-                      </a>
-                      <span class="hover-line"></span>
-                    </div>
-                    <div>
-                      <a
-                        href="https://github.com/jordanepps/find-the-recipe-server"
-                        target="_blank"
-                      >
-                        Server Repo
-                      </a>
-                      <span class="hover-line"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="line-separator">
-            <span></span>
-          </div>
-          <div class="project">
-            <div class="project-about">
-              <h4>Demographics Web App</h4>
-
-              <p>
-                Users can enter in a GitHub username or provide an image with at
-                least one face. If the requirements are met, the app will tell
-                you have many people are in the picture as well as the
-                probablity of their age, gender, and multicultural race.
-              </p>
-              <p>Made with: <span>Javascript</span> <span>JQuery</span></p>
-            </div>
-            <div class="project-screenshot">
-              <div class="project-img-container">
-                <img
-                  src="img/demographics-screenshot.png"
-                  alt="A screen shot of a Demographics Web App"
-                />
-                <div class="project-links">
-                  <div class="link-container">
-                    <div>
-                      <a
-                        href="https://jordanepps.github.io/Image-Demographics-Data/"
-                        target="_blank"
-                      >
-                        Live App
-                      </a>
-                      <span class="hover-line"></span>
-                    </div>
-
-                    <div>
-                      <a
-                        href="https://github.com/jordanepps/Image-Demographics-Data"
-                        target="_blank"
-                      >
-                        Repo
-                      </a>
-                      <span class="hover-line"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="line-separator">
-            <span></span>
-          </div>
-        </div>
-      </section>
-      <section id="contact">
-        <div class="contact-container">
-          <h3 class="contact-title">get in touch via</h3>
-          <div class="contact-links">
-            <div>
-              <a
-                class="link"
-                id="linkedin"
-                href="https://www.linkedin.com/in/jordan-epps-2370b968/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Linked<span class="fab fa-linkedin-in"></span
-              ></a>
-              <span class="hover-line"></span>
-            </div>
-
-            <div>
-              <a
-                class="link"
-                id="email"
-                href="mailto:jordanepps@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Email <span class="fas fa-envelope"></span
-              ></a>
-              <span class="hover-line"></span>
-            </div>
-            <div>
-              <a
-                class="link"
-                id="github"
-                href="https://github.com/jordanepps"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><span class="fab fa-github"></span><br />GitHub</a
-              >
-              <span class="hover-line"></span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <p>Designed and built by Jordan Epps</p>
       </div>
-    </footer>
-    <script src="lib/anime.min.js"></script>
-    <script src="main.js"></script>
-  </body>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section id="bio">
+      <div class="bio-container">
+        <div class="bio-image">
+          <img src="https://via.placeholder.com/250" alt="" />
+          <h3>Jordan Epps</h3>
+        </div>
+
+        <div class="bio-text">
+          <h2 class="bio-title bio-title-1 headline">
+            <span class="text-wrapper">
+              <span class="letters">A little</span>
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+            </span>
+          </h2>
+          <br />
+          <h2 class="bio-title bio-title-2 headline">
+            <span class="text-wrapper">
+              <span class="letters">about me</span>
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+            </span>
+          </h2>
+          <div class="bio">
+            <p class="p1">
+              Hi! I am Jordan, a developer native to New York City. Having
+              grown up in one of the largest cities in the world for high-tech
+              infrastructure, I was exposed to technology early in life.
+              Curiosity quickly developed, especially pertaining to the
+              internet. I wanted to know the science behind it all, so I
+              taught myself how to code, graduated from Thinkful's
+              engineering course, and I have not stopped since.
+            </p>
+            <p class="p2">
+              I enjoy web development because it provides me the ability to
+              manufacture anything I conceptualize. I am able to incorporate
+              inspiration from the streets that catalyzed my interest for
+              coding, which is my favorite part. There is always something new
+              to learn, and there is always a more efficient way to produce
+              the designs you desire. Web development consists of perpetual
+              evolutions to the original structure, much like home in New
+              York, and for that it will always be my passion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-title">
+        <h3 class="title-1 headline">
+          <span>Some of</span>
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+        </h3>
+        <br />
+        <h3 class="title-2 headline">
+          <span>my work</span>
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+        </h3>
+      </div>
+      <div class="projects-container">
+        <div class="project">
+          <div class="project-about">
+            <h4>Find The Recipe</h4>
+
+            <p>
+              Submit an image that contains food and the Clarifai API will use
+              artificial intelligence to determine possible matching
+              ingredients. The ingredients are then sent to the Edamam API and
+              recipes with ingredients most likely matching the image will be
+              displayed in order. Register and log in to save your favorite
+              recipes you find.
+            </p>
+            <p>
+              Made with: <span>React</span> <span>NodeJS</span><span>Express</span><span>Postgres</span>
+            </p>
+          </div>
+
+          <div class="project-screenshot">
+            <div class="project-img-container">
+              <img src="img/find-the-recipe-screenshot.png" alt="A screen shot of a Demographics Web App" />
+              <div class="project-links">
+                <div class="link-container">
+                  <div>
+                    <a href="https://jordans-recipe-app.now.sh/" target="_blank">
+                      Live App
+                    </a>
+                    <span class="hover-line"></span>
+                  </div>
+                  <div>
+                    <a href="https://github.com/jordanepps/find-the-recipe-client" target="_blank">
+                      Client Repo
+                    </a>
+                    <span class="hover-line"></span>
+                  </div>
+                  <div>
+                    <a href="https://github.com/jordanepps/find-the-recipe-server" target="_blank">
+                      Server Repo
+                    </a>
+                    <span class="hover-line"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line-separator">
+          <span></span>
+        </div>
+        <div class="project">
+          <div class="project-about">
+            <h4>Demographics Web App</h4>
+
+            <p>
+              Users can enter in a GitHub username or provide an image with at
+              least one face. If the requirements are met, the app will tell
+              you have many people are in the picture as well as the
+              probability of their age, gender, and multicultural race.
+            </p>
+            <p>Made with: <span>Javascript</span> <span>JQuery</span></p>
+          </div>
+          <div class="project-screenshot">
+            <div class="project-img-container">
+              <img src="img/demographics-screenshot.png" alt="A screen shot of a Demographics Web App" />
+              <div class="project-links">
+                <div class="link-container">
+                  <div>
+                    <a href="https://jordanepps.github.io/Image-Demographics-Data/" target="_blank">
+                      Live App
+                    </a>
+                    <span class="hover-line"></span>
+                  </div>
+
+                  <div>
+                    <a href="https://github.com/jordanepps/Image-Demographics-Data" target="_blank">
+                      Repo
+                    </a>
+                    <span class="hover-line"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line-separator">
+          <span></span>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-container">
+        <h3 class="contact-title">get in touch via</h3>
+        <div class="contact-links">
+          <div>
+            <a class="link" id="linkedin" href="https://www.linkedin.com/in/jordan-epps-2370b968/" target="_blank"
+              rel="noopener noreferrer">Linked<span class="fab fa-linkedin-in"></span></a>
+            <span class="hover-line"></span>
+          </div>
+
+          <div>
+            <a class="link" id="email" href="mailto:jordanepps@gmail.com" target="_blank"
+              rel="noopener noreferrer">Email <span class="fas fa-envelope"></span></a>
+            <span class="hover-line"></span>
+          </div>
+          <div>
+            <a class="link" id="github" href="https://github.com/jordanepps" target="_blank"
+              rel="noopener noreferrer"><span class="fab fa-github"></span><br />GitHub</a>
+            <span class="hover-line"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <p>Designed and built by Jordan Epps</p>
+    </div>
+  </footer>
+  <script src="lib/anime.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
