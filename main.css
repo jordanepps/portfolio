@@ -254,7 +254,7 @@ main {
 .project-about h4 {
     font-family: 'Proza Libre', sans-serif;
     font-size: 26px;
-    margin-top: 0;
+    margin: 0;
 }
 
 .project-about p {
