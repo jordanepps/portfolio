@@ -221,9 +221,15 @@ main {
 
 .project-about {
     padding: 10px 40px;
-    text-align: center;
     justify-self: center;
     place-self: center;
+}
+
+.project-about h4,
+.project-about span,
+.project-about .project-tools {
+    text-align: center;
+
 }
 
 .line-separator {
